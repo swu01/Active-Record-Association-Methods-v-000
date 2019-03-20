@@ -4,9 +4,7 @@ class Genre < ActiveRecord::Base
 
   def song_count
     # return the number of songs in a genre
-    self.genre.songs.count
-  end
-
+    self.songs.count
   def artist_count
     # return the number of artists associated with the genre
     self.genre
